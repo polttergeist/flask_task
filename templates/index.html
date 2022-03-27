@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block name %}
+<div>
+<h1 class="text-center">
+	Welcome bro!
+</h1>
+<p class="lead text-center">Hi! We help ITMO students to do tasks for a subject called "Vulnerabilities detection" and we'd be happy to help you with it! Just fill in the form, submit it and wait for the miracle to happen!</p>
+<p>(you need to extract the flag from the XML entity 'flag' referring to flag.txt, which is located in the same directory as this one. glhf)</p>
+</div>
+{% endblock %}
+
+{% block void %}
+<form role="form" name="kekw" method="POST" onsubmit="cook()">
+	<div class="form-group">
+		<label for="email">Email</label>
+		<input type="email" class="form-control" name="email" placeholder="Your Email here">
+
+		<label for="password">Password</label>
+		<input type="password" class="form-control" name="password" placeholder="Your password here">
+
+		<div class="button-wrapper">
+			<button type="submit" class="btn btn-success center">Submit</button>
+		</div>
+	</div>
+</form>
+{% endblock %}
